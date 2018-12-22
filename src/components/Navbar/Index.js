@@ -2,73 +2,66 @@ import React, { Component } from 'react'
 
 export default class Navbar extends Component {
     render() {
-        return <div>
-            {/* <!-- fixed-top--> */}
-            <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-dark navbar-shadow">
-                <div class="navbar-wrapper">
-                    <div class="navbar-container content">
-                        <div class="collapse navbar-collapse" id="navbar-mobile">
-                            <ul class="nav navbar-nav mr-auto float-left">
-                                <li class="dropdown nav-item mega-dropdown"><h3 class="content-header-title mb-0 d-inline-block">News Feed</h3></li>
-                            </ul>
-                            <ul class="nav navbar-nav float-right">
-                                <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="mr-1">Hello,<span class="user-name text-bold-700">John Doe</span></span><span class="avatar avatar-online"><img src="../../../app-assets/images/portrait/small/avatar-s-19.png" alt="avatar" /><i></i></span></a>
-                                    <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><i class="ft-user"></i> Edit Profile</a><a class="dropdown-item" href="#"><i class="ft-mail"></i> My Inbox</a><a class="dropdown-item" href="#"><i class="ft-check-square"></i> Task</a><a class="dropdown-item" href="#"><i class="ft-message-square"></i> Chats</a>
-                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="ft-power"></i> Logout</a>
-                                    </div>
-                                </li>
-                                <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-bell"></i><span class="badge badge-pill badge-default badge-danger badge-default badge-up badge-glow">5</span></a>
-                                    <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
-                                        <li class="dropdown-menu-header">
-                                            <h6 class="dropdown-header m-0"><span class="grey darken-2">Notifications</span></h6><span class="notification-tag badge badge-default badge-danger float-right m-0">5 New</span>
-                                        </li>
-                                        <li class="scrollable-container media-list w-100"><a href="javascript:void(0)">
-                                            <div class="media">
-                                                <div class="media-left align-self-center"><i class="ft-plus-square icon-bg-circle bg-cyan"></i></div>
-                                                <div class="media-body">
-                                                    <h6 class="media-heading">You have new order!</h6>
-                                                    <p class="notification-text font-small-3 text-muted">Lorem ipsum dolor sit amet, consectetuer elit.</p><small>
-                                                        <time class="media-meta text-muted" dateTime="2015-06-11T18:29:20+08:00">30 minutes ago</time></small>
-                                                </div>
-                                            </div></a><a href="javascript:void(0)">
-                                                <div class="media">
-                                                    <div class="media-left align-self-center"><i class="ft-download-cloud icon-bg-circle bg-red bg-darken-1"></i></div>
-                                                    <div class="media-body">
-                                                        <h6 class="media-heading red darken-1">99% Server load</h6>
-                                                        <p class="notification-text font-small-3 text-muted">Aliquam tincidunt mauris eu risus.</p><small>
-                                                            <time class="media-meta text-muted" dateTime="2015-06-11T18:29:20+08:00">Five hour ago</time></small>
-                                                    </div>
-                                                </div></a><a href="javascript:void(0)">
-                                                    <div class="media">
-                                                        <div class="media-left align-self-center"><i class="ft-alert-triangle icon-bg-circle bg-yellow bg-darken-3"></i></div>
-                                                        <div class="media-body">
-                                                            <h6 class="media-heading yellow darken-3">Warning notifixation</h6>
-                                                            <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p><small>
-                                                                <time class="media-meta text-muted" dateTime="2015-06-11T18:29:20+08:00">Today</time></small>
-                                                        </div>
-                                                    </div></a><a href="javascript:void(0)">
-                                                        <div class="media">
-                                                            <div class="media-left align-self-center"><i class="ft-check-circle icon-bg-circle bg-cyan"></i></div>
-                                                            <div class="media-body">
-                                                                <h6 class="media-heading">Complete the task</h6><small>
-                                                                    <time class="media-meta text-muted" dateTime="2015-06-11T18:29:20+08:00">Last week</time></small>
-                                                            </div>
-                                                        </div></a><a href="javascript:void(0)">
-                                                            <div class="media">
-                                                                <div class="media-left align-self-center"><i class="ft-file icon-bg-circle bg-teal"></i></div>
-                                                                <div class="media-body">
-                                                                    <h6 class="media-heading">Generate monthly report</h6><small>
-                                                                        <time class="media-meta text-muted" dateTime="2015-06-11T18:29:20+08:00">Last month</time></small>
-                                                                </div>
-                                                            </div></a></li>
-                                        <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center" href="javascript:void(0)">Read all notifications</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+        return <div class="sidebar-detached sidebar-left" >
+            <div class="sidebar"><div class="bug-list-sidebar-content">
+                {/* <!-- Predefined Views --> */}
+                <div class="card">
+                    <div class="card-head">
+                        <div class="media p-1">
+                            <div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img src="../../../app-assets/images/portrait/small/avatar-s-1.png" alt="avatar" /><i></i></span></div>
+                            <div class="media-body media-middle">
+                                <h5 class="media-heading">Margaret Govan</h5>
+                            </div>
                         </div>
                     </div>
+
+                    {/* <!-- contacts view --> */}
+                    <div class="card-body border-top-blue-grey border-top-lighten-5">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">All Contacts</a>
+                            <a href="#" class="list-group-item list-group-item-action">Recently contacted</a>
+                            <a href="#" class="list-group-item list-group-item-action">Favorite contacts</a>
+                        </div>
+                    </div>
+
+                    {/* <!-- Groups--> */}
+                    <div class="card-body">
+                        <p class="lead">Groups</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="badge badge-primary badge-pill float-right">14</span> <a href="#"> Project</a>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge badge-info badge-pill float-right">22</span> <a href="#"> Team</a>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge badge-warning badge-pill float-right">10</span> <a href="#"> Clients</a>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge badge-success badge-pill float-right">5</span> <a href="#"> Friends</a>
+                            </li>
+                        </ul>
+                    </div>
+                    {/* <!--/ Groups--> */}
+
+                    {/* <!--More--> */}
+                    <div class="card-body ">
+                        <p class="lead">More</p>
+                        <ul class="list-group">
+                            <li><a href="#" class="list-group-item">Import</a></li>
+                            <li><a href="#" class="list-group-item">Export</a></li>
+                            <li><a href="#" class="list-group-item">Print</a></li>
+                            <li><a href="#" class="list-group-item">Restore contacts</a></li>
+                            <li><a href="#" class="list-group-item">Find duplicate</a></li>
+                        </ul>
+                    </div>
+                    {/* <!--/More--> */}
+
                 </div>
-            </nav>
-        </div>
+                {/* <!--/ Predefined Views --> */}
+
+            </div>
+            </div>
+        </div >
     }
 }

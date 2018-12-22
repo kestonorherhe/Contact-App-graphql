@@ -7,12 +7,8 @@ window.jQuery = window.$ = $;
 
 export default class App extends React.Component {
   render() {
-
-  $(document).ready(function () {
-
-  })
     return (
-        <div>
+        <div class="app-content content">
             <Routes />
         </div>
     );
