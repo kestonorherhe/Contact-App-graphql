@@ -29,7 +29,7 @@ export default class Header extends Component {
                                                     <div class="media-body">
                                                         <h6 class="media-heading">You have new order!</h6>
                                                         <p class="notification-text font-small-3 text-muted">Lorem ipsum dolor sit amet, consectetuer elit.</p><small>
-                                                            <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">30 minutes ago</time></small>
+                                                            <time class="media-meta text-muted" dateTime="2015-06-11T18:29:20+08:00">30 minutes ago</time></small>
                                                     </div>
                                                 </div></a><a href="javascript:void(0)">
                                                     <div class="media">
@@ -37,7 +37,7 @@ export default class Header extends Component {
                                                         <div class="media-body">
                                                             <h6 class="media-heading red darken-1">99% Server load</h6>
                                                             <p class="notification-text font-small-3 text-muted">Aliquam tincidunt mauris eu risus.</p><small>
-                                                                <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Five hour ago</time></small>
+                                                                <time class="media-meta text-muted" dateTime="2015-06-11T18:29:20+08:00">Five hour ago</time></small>
                                                         </div>
                                                     </div></a><a href="javascript:void(0)">
                                                         <div class="media">
@@ -45,21 +45,21 @@ export default class Header extends Component {
                                                             <div class="media-body">
                                                                 <h6 class="media-heading yellow darken-3">Warning notifixation</h6>
                                                                 <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p><small>
-                                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                                                    <time class="media-meta text-muted" dateTime="2015-06-11T18:29:20+08:00">Today</time></small>
                                                             </div>
                                                         </div></a><a href="javascript:void(0)">
                                                             <div class="media">
                                                                 <div class="media-left align-self-center"><i class="ft-check-circle icon-bg-circle bg-cyan"></i></div>
                                                                 <div class="media-body">
                                                                     <h6 class="media-heading">Complete the task</h6><small>
-                                                                        <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Last week</time></small>
+                                                                        <time class="media-meta text-muted" dateTime="2015-06-11T18:29:20+08:00">Last week</time></small>
                                                                 </div>
                                                             </div></a><a href="javascript:void(0)">
                                                                 <div class="media">
                                                                     <div class="media-left align-self-center"><i class="ft-file icon-bg-circle bg-teal"></i></div>
                                                                     <div class="media-body">
                                                                         <h6 class="media-heading">Generate monthly report</h6><small>
-                                                                            <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Last month</time></small>
+                                                                            <time class="media-meta text-muted" dateTime="2015-06-11T18:29:20+08:00">Last month</time></small>
                                                                     </div>
                                                                 </div></a></li>
                                             <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center" href="javascript:void(0)">Read all notifications</a></li>
