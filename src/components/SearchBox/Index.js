@@ -11,7 +11,7 @@ export default class SearchBox extends Component {
                                 <div class="position-relative">
                                     <input type="search" id="search-contacts" class="form-control" placeholder="Search contacts..." />
                                     <div class="form-control-position">
-                                        <i class="la la-search text-size-base text-muted la-rotate-270"></i>
+                                        <i class="ft-search text-size-base text-muted la-rotate-270"></i>
                                     </div>
                                 </div>
                             </form>
