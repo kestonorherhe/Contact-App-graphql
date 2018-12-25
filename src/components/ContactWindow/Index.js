@@ -26,7 +26,7 @@ export default class Index extends Component {
 
                 if (error) {
                     return <div>
-                        Error...
+                        An Unexpected Error Occurred...
                     </div>
                 }
                 console.log(data)

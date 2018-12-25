@@ -11,7 +11,8 @@ export default class ContactList extends Component {
         const { contacts } = this.state
         return <Fragment>
             { contacts.length > 0 ? contacts.map(contact => (
-                <tr key={ contact._id }>
+                <tr key={ contact.id }>
+                    <td class="id hidden">{ contact.id }</td>
                     <td>
                         <div class="media">
                             <div class="media-left pr-1"><span class="avatar avatar-sm avatar-online rounded-circle"><img src="../../../app-assets/images/portrait/small/avatar-s-2.png"
@@ -25,15 +26,15 @@ export default class ContactList extends Component {
                         <a class="email" href="mailto:email@example.com">{ contact.email }</a>
                     </td>
                     <td class="phone">{ contact.phone }</td>
-                    <td class="text-center">
-                        <div class="favorite active mb-1"></div>
+                    <td class="text-center">                        
+                        { contact.isFavorite === "true" ? <div class="icon-star primary"></div> : <div class="icon-star"></div> }
                     </td>
                     <td>
-                        <a data-toggle="modal" data-target="#EditContactModal" class="primary edit mr-1"><i class="la la-pencil"></i></a>
-                        <a class="danger delete mr-1"><i class="la la-trash-o"></i></a>
+                        <a data-toggle="modal" data-target="#EditContactModal" class="primary edit mr-1"><i class="ft-edit-2"></i></a>
+                        <a class="danger delete mr-1"><i class="ft-trash"></i></a>
                         <span class="dropdown">
                             <a id="btnSearchDrop2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="dropdown-toggle dropdown-menu-right"><i
-                                class="la la-ellipsis-v"></i></a>
+                                class="ft-more-horizontal"></i></a>
                             <span aria-labelledby="btnSearchDrop2" class="dropdown-menu mt-1 dropdown-menu-right">
                                 <a data-toggle="modal" data-target="#EditContactModal" class="dropdown-item edit"><i class="ft-edit-2"></i>
                                     Edit</a>
