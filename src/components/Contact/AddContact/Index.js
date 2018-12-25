@@ -30,9 +30,8 @@ export default class AddContact extends Component {
     // on form submit
     handleFormSubmit = (e, addContact) => {
         e.preventDefault()
-        console.log(e);
-        console.log(addContact);
-        addContact().then(() => console.log('added'))
+        addContact()
+        window.location.replace("/");
     }
     render() {
         const { contact } = this.state
@@ -105,7 +104,7 @@ export default class AddContact extends Component {
                                                 onClick={ e => this.handleFormSubmit(e, addContact) }
                                                     data-dismiss="modal"
                                                     class="btn btn-info add-contact-item" ><i
-                                                        class="icon-paper-plane d-lg-none"></i> <span class="icon-paper-plane d-none d-lg-block">Add New</span></button>
+                                                        class="icon-paper-plane d-lg-none"></i><span class="icon-paper-plane d-none d-lg-block">Add New</span></button>
                                             </fieldset>
                                         </div>
                                     </form>

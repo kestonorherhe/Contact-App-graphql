@@ -28,7 +28,8 @@ export default class EditContact extends Component {
     }
     // handle form submit
     handleSubmit = (e, editContact) => {
-        editContact()
+        editContact() 
+        window.location.replace("/")
     }
     render() {
         const { id, name, email, phone } = this.state.contact
@@ -59,11 +60,12 @@ export default class EditContact extends Component {
                                             <fieldset class="form-group col-12">
                                                 <input 
                                                 id="id"
+                                                name="id"
                                                 class="name form-control"
                                                 type="text"
                                                 readOnly={ true }
                                                 onMouseOver={ this.handleFormChange }
-                                                name="id"/>
+                                                />
                                             </fieldset>
                                             <fieldset class="form-group col-12">
                                                 <input type="text" id="name"
